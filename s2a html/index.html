@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>高二忠溫馨網</title>
+  <link rel="stylesheet" href="style.css"> <!-- 之後加CSS -->
+  <style>
+    body {
+      position: relative;
+      margin: 0;
+      font-family: sans-serif;
+      height: 100vh;
+      overflow: hidden;
+    }
+    
+    /* 背景 */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url('bgimg.jpeg');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.1; /* 透明度 */
+      z-index: -1;  /* 底層 */
+    }
+    </style>
+</head>
+<body>
+
+  <header>
+    <h1>高二忠溫馨網</h1>
+    <nav>
+      <a href="indexbutton/menu.html">每周菜單</a> 
+      <a href="indexbutton/scores.html">週考成績</a> 
+      <a href="indexbutton/schedule.html">每週課表</a> 
+      <a href="indexbutton/todo.html">班級代辦事項</a>
+    </nav>
+  </header>
+  </main>
+</body>
+</html>
