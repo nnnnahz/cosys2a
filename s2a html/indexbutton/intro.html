@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>可愛成員介紹</title>
+  <link rel="stylesheet" href="../style.css"> <!-- 之後加CSS -->
+</head>
+
+
+<body>
+  <main>
+    <section id="intro">
+    <h1>可愛成員介紹</h1>
+
+    <nav>
+      <a onclick="goToRandom()">抽一位</a>
+      <a href="../index.html">回首頁</a>
+    </nav>
+
+    </section>
+  </main>
+
+  <script>
+    const studentPages=[
+      "intro-students/teacher.html",
+      "intro-students/student1.html"
+    ];
+
+    function goToRandom(){
+      const randomIndex= Math.floor(Math.random()*studentPages.length);
+      const randomPage=studentPages[randomIndex];
+      window.location.href=randomPage;
+    } 
+
+
+  </script>
+</body>
